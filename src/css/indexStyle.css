@@ -5,6 +5,7 @@
 @import "line-awesome.min.css";
 @import "superfish.css";
 @import "style-menu.css";
+@import "ie.css";
 
 
 
@@ -910,13 +911,6 @@ header h1 a {
 }
 
 }}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .slider_wrapper{
-        display: none;
-    }
-}
-
-
 /* category porduct part */
 .categoryProduct{
     width: 100%;

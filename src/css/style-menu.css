@@ -4,7 +4,9 @@
 .searchCountainer{
     width: 80rem;
     border-radius: 5px;
-    
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
 }
 @media  (max-width: 1400px) { 
   .searchCountainer{
@@ -25,37 +27,33 @@ form.searchPart input[type=text] {
   }
  }
 form.searchPart input[type=text] {
-  box-sizing: border-box;
-    padding: 9px;
-    font-size: 17px;
-    border-radius: 10px;
+  outline-style: none;
+    height: 100%;
     width: 88%;
-    border: 1px solid #f1f1f1 ;
-    background: #f1f1f1;
+    box-sizing: border-box;
+    border: 2px solid var(--yellow);
+    
   }
 
  .searchPartR{
     float: right;
     width: 6%;
-    padding: 8px;
     background: var(--yellow);
     color: white;
-    font-size: 15px;
-    border-radius: 0 5px 5px 0 ;
-    border: 1px solid var(--yellow);
-    cursor: pointer;
+    border: none;
+    border-radius: 0 5px 5px 0;
   }
   .searchPartL {
       float : left;
+      padding: 8px;
       width: 6%;
-      padding: 9px;
+      height: 100%;
       background: var(--yellow);
       color: white;
-      font-size: 17px;
-      border: 1px solid var(--yellow);
       border-radius: 5px 0 0 5px ;
       border-left: none;
       cursor: pointer;
+      border: none;
   }
   
   form.searchPart button:hover {
