@@ -83,6 +83,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,6 +96,9 @@ body {
 .signForm {
   border: 1px solid #e0e0e0;
   padding: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .divider h2 {
@@ -115,5 +119,35 @@ body {
   background-color: #747474;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
+}
+
+.alertMessage {
+  width: 100%;
+  border: 1px solid crimson;
+  padding: 10px 5px;
+  color: crimson;
+  display: none;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.alertMessage .inside {
+  padding: 20px 40px;
+  position: relative;
+}
+
+.alertMessage h3 {
+  font-size: large;
+  padding: 5px 0;
+}
+
+.alertMessage p {
+  font-size: small;
+}
+
+.alertMessage span {
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 /*# sourceMappingURL=signIn.css.map */
