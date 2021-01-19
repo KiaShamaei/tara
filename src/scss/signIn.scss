@@ -1,0 +1,68 @@
+@import 'persianFont';
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var
+{background:transparent;
+    border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}
+ol, ul {list-style:none;}blockquote, q {quotes:none;}
+table, table td {padding:0;border:none;border-collapse:collapse;}
+img {vertical-align:top;}embed {vertical-align:top;}
+input[type=text], textarea{ outline:none;border-radius:0;}
+*{
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-family: "Yekan";
+    text-align: right;
+}
+.mainSignin{
+    max-height: 65%;
+    background-color: #fff;
+}
+.footerSignin{
+    width: 100%;
+    background-image: linear-gradient(#FCFCFC, #fff);
+    max-height: 35%;
+    color:rgb(136, 136, 136) ;
+    border-top: 2px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #ececec, #ffffff)
+}
+.signFormRow{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+   img{
+    width:100px;
+    
+
+   }
+
+
+}
+.signForm{
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+}
+.divider{
+    h2 {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid rgb(223, 213, 213); 
+        line-height: 0.5em;
+        margin: 10px 0 20px; 
+     } 
+     
+     h2 span { 
+         background:#fff; 
+         padding:0 10px; 
+     } 
+}
+.secBtn:hover{
+    color :rgb(250, 250, 250);
+    background-color: rgb(116, 116, 116);
+    transition: all ease .4s;
+
+}

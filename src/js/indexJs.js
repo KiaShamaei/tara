@@ -36,6 +36,9 @@ function openSecound() {
 function closeNav2(){
   document.getElementById("mySidenav2").style.width = "0";
 }
+document.querySelector('#closeSide2').addEventListener('click', function(){
+  closeNav2();
+})
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.querySelector('.modal').style.display="none";

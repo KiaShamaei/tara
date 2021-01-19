@@ -111,10 +111,24 @@ form.searchPart input[type=text] {
   text-decoration: none;
   font-size: 18px;
   color: #111;
+  font-weight: bold;
   display: block;
   transition: 0.3s;
   text-align: right;
+  border-top: 1px solid rgb(223, 223, 223);
 }
+.sidenav .sideChild{
+  font-size: 16px;
+  font-weight: normal;
+  color: #5e5f5f;
+  border-top: 0;
+  i{
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+}
+
 
 .sidenav a:hover {
   color: #474747;
@@ -123,10 +137,12 @@ form.searchPart input[type=text] {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 1px;
-  right: 302px;
+  top: 18px;
+  right: 300px;
   font-size: 54px;
   color: #C1C1C1;
+  border: 0;
+  padding: 1px 1px 4px 1px ;
   
 }
 .sidnavTop h4{
