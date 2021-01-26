@@ -257,4 +257,15 @@ body {
   left: 10px;
   color: #a0a0a0;
 }
+
+.inputcaptcha {
+  width: 50%;
+  border: 0;
+  outline: none;
+}
+
+.captchaimg img {
+  width: 40%;
+  height: 100%;
+}
 /*# sourceMappingURL=signIn.css.map */

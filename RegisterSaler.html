@@ -29,21 +29,28 @@
                     <form class="signForm my-3" id="form"  page="1">
                         <div class="form-row">
                             <div class="col-12 py-3">
+                                <div class="text-danger" id="validEmail"></div>
                                 <input type="text" class="form-control" name="useremail" id="useremail"
-                                    placeholder=" ایمیل خود را وارد کنید  ...">
+                                    placeholder=" ایمیل خود را وارد کنید  ..." autocomplete="off">
                             </div>
-                            <div class="col-12 py-3 ">
+                            <!-- <div class="col-12 py-3 ">
                                 <input type="password" class="form-control fontname" name="userpassword"
                                     id="userpassword" placeholder=" رمز عبور خود را انتخاب کنید  ...">
                                 <i class="fa fa-eye passIcon" id="passIcon"></i>
 
+                            </div> -->
+
+                            <div class="col-12 py-1">
+                                <div id="validMobile" class="text-danger"></div>
+                                <input type="text" class="form-control fontname " name="usermobile"
+                                    id="usermobile" placeholder="شماره موبایل را وارد کنید ..." autocomplete="off">
                             </div>
-                            <div class="col-12 py-3">
-                                <input type="text" class="form-control fontname text-center" name="usermobile"
-                                    id="usermobile" placeholder="...09">
-                            </div>
+                            <div class="col-12 p-3 captchaimg">
+                                <input class="inputcaptcha text-right" type="text" placeholder=" کد امنیتی مقابل را وارد کنید ... " id="txtcaptcha" autocomplete="off">
+                                <img id="imgcaptcha" src="">
+                              </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-warning btn-block">ثبت نام</button>
+                                <button type="submit" class="btn btn-warning btn-block" id="submit">ثبت نام</button>
                             </div>
                             <div class="col-12 mt-md-3">
                                 <P class="text-muted">قبلاً ثبت نام کرده‌ام. <span class="text-primary">ورود</span></P>
@@ -103,6 +110,8 @@
     <script src="./src/js/popper.min.js"></script>
     <script src="./src/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/validFunction.js"></script>
+    <script src="./src/js/registerSaler.js"></script>
     <!--must inject-->
     <script src="./src/js/registerSaler.js"></script>
 
