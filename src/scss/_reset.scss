@@ -2,3 +2,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,c
 *{
     box-sizing: border-box;
 }
+::placeholder {
+    color: rgb(196, 196, 196);
+    opacity: 1; 
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/bootstrap.css">
+  <link rel="stylesheet" href="./src/css/style_initialInfo.css">
+  <link rel="stylesheet" href="./src/css/persianDate.css">
+  <link href="./src/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/signIn.css">
+  <link rel="stylesheet" href="./src/css/timeLine.css">
+  <title>فرم اطلاعات مالک فروشگاه </title>
+</head>
+
+<body>
+  <div class="container-fluid footerSignin">
+    <div class="row justify-content-center align-item-center my-md-1 ">
+
+      <div class="col-md-8 signFormRow text-center">
+        <img src="./src/images/Tara.png" class="my-md-2">
+        <h2 style="direction:rtl; text-align:center;" class="p-3">فرم اطلاعات مالک فروشگاه </h2>
+
+      <form action="" class="needs-validation formValid" id="formInfo" name="formInfo" novalidate>
+        <div class="row text-right">
+          <div class="col-md-6 text-right">
+            <div class="form-group">
+              <label for="nameUser">نام</label>
+              <input type="text" class="form-control" id="nameUser" placeholder="نام ..." name="uname" required autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="form-group">
+              <label for="familyUser text-right"> نام خانوادگی </label>
+              <input type="text" class="form-control text-right" id="familyUser" placeholder="نام خانوادگی..."
+                name="familyUser" required autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="nationalCodUser">کد ملی </label>
+              <input type="text" class="form-control" id="nationalCodUser" placeholder="کد ملی ..."
+                name="nationalCodUser" onchange="IsIranPostalCode(document.formInfo.nationalCodUser)" required autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="brithdayUser"> تاریخ تولد :</label>
+              <!-- <input type="text" class="form-control hasDatepicker" id="date-id" placeholder="تاریخ تولد..." name="uname" required zid="BIRTHDATE" zcp="تاریخ تولد" onchange="fixvalidatezframe(this);"> -->
+              <input type="text" class="form-control" id="date-id" placeholder="تاریخ تولد..." name="date-id" required autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="postalCodUser">کد پستی </label>
+              <input type="text" class="form-control" id="postalCodUser" placeholder="کد پستی ... " name="postalCodUser"
+                onchange="IsIranPostalCode(document.formInfo.postalCodUser)" required min="1" max="11" autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="emailUser"> ایمیل </label>
+              <input type="text" class="form-control" id="eUser" placeholder="ایمیل..." name="emailUser" required
+                onchange="ValidateEmail(document.formInfo.emailUser)" autocomplete="off">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="addUser">آدرس </label>
+              <textarea type="text" class="form-control" id="addUser" placeholder="آدرس ..." name="addUser" autocomplete="off"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6 text-">
+            <button type="submit" class="btn btn-block btn-outline-warning " id="submit">ذخیره
+            </button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footerSignin mt-md-3">
+    <div class="row justify-content-center align-item-center ">
+        <div class="col-md-8 text-center">
+            <div id="timeline-wrap">
+              <div id="timeline"></div>
+    
+              <!-- This is the individual marker-->
+              <div class="marker mfirst timeline-icon three" id="1">
+                <i class="fa fa-pencil"></i>
+              </div>
+              <!-- / marker -->
+              <!-- This is the individual marker-->
+              <div class="marker m3 timeline-icon one" id="2">
+                <i class="fa fa-list"></i>
+              </div>
+              <!-- / marker -->
+              <!-- This is the individual marker-->
+              <div class="marker mlast timeline-icon four" id="3">
+                <i class="fa fa-check"></i>
+              </div>
+              <!-- / marker -->
+            </div>
+          </div>
+      <div class="col-md-8 text-center">
+        <P class="pt-3">راهنما-</P>
+        <P>1996-2020,&#0169; taramobi.io.com, Inc. or its affiliates</P>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="./src/js/jQuery.js"></script>
+    <script src="./src/js/popper.min.js"></script>
+<!--    <script src="../js/bootstrap.bundle.min.js"></script>-->
+    <script src="./src/js/persian-date.js"></script>
+    <script src="./src/js/persianDatepicker.js"></script>
+    <script src="./src/js/validfild.js"></script>
+    <script  src="./src/js/setinitialinfo.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
